@@ -28,9 +28,7 @@ That's the fundamental of this post.
 So far, I have found two (Powerful!) integrations that help in controlling entities when prices are low or high.  
 1. First is "EV Smart Charging" by Jonas B Karlsson: https://github.com/jonasbkarlsson/ev_smart_charging/  
 It's quite easy to configure and you can use it to charge your car in cheapest timeperiod between _NOW_ and _Departure Time_
-But there is a catch: As for now, it does not support TGE integration yet. Pull Request is still waiting for merge, then feature will be available at next release of integration.  
-Until then you have to install it using HACS and manually patch integration code with changes from my pull request.  
-https://github.com/jonasbkarlsson/ev_smart_charging/issues/322
+
 2. Second is "Cheapest Energy Hours" written by TheFes  
 https://github.com/TheFes/cheapest-energy-hours/
 Incredibly powerful tool, capable of finding cheapest and more expensive hours, in various size blocks, in continous and non-continous form.
