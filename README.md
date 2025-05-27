@@ -3,7 +3,17 @@
 More and more grid operators offer dynamic pricing. Use Home Assistant to charge your car using cheapest hours!
 This Repository contains recipe to show how I do it.
 
-## Get dynamic pricing info in Poland
+
+## Pstryk
+
+In case you are a client of Pstryk.pl as your electricity seller, you can use their Home Assistant integration:  
+https://github.com/Bankilo/pstryk-home-assistant  
+Their pricing sensor factors-in all factors and provide true cost of electricity you will pay.  
+It's also already compatible with "EV Smart Charging" integration and "cheapest-energy-hours" jinja template.
+
+If you are not their client, next two steps are for you:
+
+### Get dynamic pricing info in Poland
 In Poland, single point of truth in terms of electricity price for dynamic tariffs is TGE (Towarowa Giełda Energii).  
 Price table is published every day as "Rynek Dnia Następnego" (day-ahead market): https://tge.pl/energia-elektryczna-rdn  
 Unfortunately, as of 15th of December 2024, no electricity seller offers an API to provide pricing table.  
@@ -12,7 +22,7 @@ Happily, @PiotrMachowski created Home Assistant Custom Integration that download
 https://github.com/PiotrMachowski/Home-Assistant-custom-components-TGE  
 Thank You so much, @PiotrMachowski, your contribution is invaluable!
 
-## Extend pricing by distribution price
+### Extend pricing by distribution price
 Next, when You buy electricity from your seller, you need to pay your distributor to deliver those electrons to your utility meter.  
 In Poland, when you switch to dynamic tariffs, you are moved into G12W distribution tariff (Peak and Off-Peak during the day, Off-peak weekends)
 Consult your utility bill for prices of distribution.  
