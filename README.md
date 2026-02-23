@@ -16,10 +16,10 @@ If you are not their client, next two steps are for you:
 ### Get dynamic pricing info in Poland
 In Poland, single point of truth in terms of electricity price for dynamic tariffs is TGE (Towarowa Giełda Energii).  
 Price table is published every day as "Rynek Dnia Następnego" (day-ahead market): https://tge.pl/energia-elektryczna-rdn  
-Unfortunately, as of 15th of December 2024, no electricity seller offers an API to provide pricing table.  
+Unfortunately, as of 23rd of February 2026, no electricity seller offers a public API to provide pricing table.  
 
 Happily, @PiotrMachowski created Home Assistant Custom Integration that downloads those data in format compatible with other tools in this area:  
-https://github.com/PiotrMachowski/Home-Assistant-custom-components-TGE  
+https://github.com/PiotrMachowski/Home-Assistant-custom-components-PGE-TGE  
 Thank You so much, @PiotrMachowski, your contribution is invaluable!
 
 ### Extend pricing by distribution price
